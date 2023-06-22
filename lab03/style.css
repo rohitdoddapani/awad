@@ -1,0 +1,32 @@
+.heading{
+  text-align: center;
+  color: blue;
+}
+
+.calculator {
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #bebebe;
+    box-shadow: 0 0 5px #bebebe;
+  }
+  
+  #result {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
