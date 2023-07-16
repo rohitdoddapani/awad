@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: lightgray;
+}
+
+nav {
+    background-color: lightsteelblue;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+.field{
+    padding: 15px;
+    display: table-cell;
+}

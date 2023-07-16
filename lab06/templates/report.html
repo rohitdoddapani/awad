@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Let's see if your password meets the requirements</h1>
+    
+    {% if failed_attempt %}
+        <h2>Oh no! Looks like you had issues with your password!</h2>
+        <p>Here are the requirements you failed:</p>
+        <p>failed_attempt_times: {{ failed_attempt_times }}</p>
+        {% if warning %}
+            <p class="warning">{{ warning }}</p>
+        {% endif %}
+        <ul>
+            {% if not has_uppercase %}
+                <li>You did not use an uppercase character.</li>
+            {% endif %}
+            {% if not has_lowercase %}
+                <li>You did not use an lowercase character.</li>
+            {% endif %}
+            {% if not ends_with_number %}
+                <li>You did not end your password with a number.</li>
+            {% endif %}
+            {% if not length_8 %}
+                <li>Your password length was less than 8 characters.</li>
+            {% endif %}
+        </ul>
+    {% else %}
+        <h2>Congratulations! Your password passed the 3 requirements!</h2>
+    {% endif %}
+{% endblock %}
